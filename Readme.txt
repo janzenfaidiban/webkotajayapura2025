@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+Draft desain website Kota Jayapura
 
-Template Name: iLanding
-Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Copyright &copy; Nokensoft.com
