@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="public/images/profil/logo-kota-jayapura.png" rel="icon">
+  <link href="public/images/profil/logo-kota-jayapura.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -29,14 +29,81 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .stat-item {
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-8px);
+      /* moves up on hover */
+    }
+
+    a.link-light:hover {
+      color: #fff;
+    }
+  </style>
+
+  <!-- jpr styles -->
+  <style>
+    /* jpr background colors */
+    .bg-dark-jpr {
+      background-color: #1b211d
+    }
+
+    .bg-light-jpr {
+      background-color: #f1debf
+    }
+
+    .bg-green-jpr {
+      background-color: #448b36
+    }
+
+    .bg-red-jpr {
+      background-color: #a22c16
+    }
+
+    .bg-yellow-jpr {
+      background-color: #f1a71b
+    }
 
 
+    /* jpr text colors */
+    .text-dark-jpr,
+    a.link-dark-jpr {
+      color: #1b211d
+    }
+
+    .text-light-jpr,
+    a.link-light-jpr {
+      color: #f1debf
+    }
+
+    .text-green-jpr,
+    a.link-green-jpr {
+      color: #448b36
+    }
+
+    .text-red-jpr,
+    a.link-red-jpr {
+      color: #a22c16
+    }
+
+    .text-yellow-jpr,
+    a.link-yellow-jpr {
+      color: #f1a71b
+    }
+  </style>
 
 
 </head>
 
 <body class="index-page">
-
 
 
   <style>
@@ -102,12 +169,12 @@
   </style>
 
   <!-- ======= Hero Section dengan Video Lokal ======= -->
-  <section id="hero" class="hero-section position-relative">
+  <section id="beranda" class="hero-section position-relative">
 
     <!-- Background Video Lokal -->
     <div class="video-cover">
       <video autoplay muted loop playsinline>
-        <source src="./public/video/amazon_bg_video.mp4" type="video/mp4">
+        <source src="./public/video/Background Video (1920x1080).mp4" type="video/mp4">
         Browser Anda tidak mendukung video HTML5.
       </video>
     </div>
@@ -119,7 +186,7 @@
         <img src="./public/images/profil/logo-kota-jayapura.png" width="200" alt="Logo Kota Jayapura">
         <div class="text-start d-flex flex-column justify-content-center">
           <h3 class="text-light">Selamat Datang</h3>
-          <h1 class="text-light">di Kota Jayapura.</h1>
+          <h1 class="text-light fw-bold">di Kota Jayapura.</h1>
           <p>"Hen Tecahi Yo Onomi T'mar Ni Hanased," <br> yang berarti "Satu Hati Membangun Kota untuk Kemuliaan Tuhan".
           </p>
           <p>www.jayapurakota.go.id</p>
@@ -129,7 +196,7 @@
 
       <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
         <div class="col-lg-3 col-md-6">
-          <a href="#" class="link-light">
+          <a href="#penghargaan-kota-jayapura" class="link-light">
 
             <div class="stat-item">
               <div class="stat-icon">
@@ -137,13 +204,13 @@
               </div>
               <div class="stat-content">
                 <h4 class="text-light">Penghargaan</h4>
-                <p class="mb-0">Informasi Berbagai Penghargaan Kota</p>
+                <p class="mb-0 fw-light" style="font-size: 1rem;">Informasi Berbagai Penghargaan Kota</p>
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-3 col-md-6">
-          <a href="#" class="link-light">
+          <a href="#produk-hukum-kota-jayapura" class="link-light">
 
             <div class="stat-item">
               <div class="stat-icon h1">
@@ -151,21 +218,21 @@
               </div>
               <div class="stat-content">
                 <h4 class="text-light">Produk Hukum</h4>
-                <p class="mb-0">Baca dan Unduh Informasi Produk Hukum</p>
+                <p class="mb-0 fw-light" style="font-size: 1rem;">Baca dan Unduh Informasi Produk Hukum</p>
               </div>
             </div>
           </a>
         </div>
 
         <div class="col-lg-3 col-md-6">
-          <a href="#" class="link-light">
+          <a href="#statistik-kota-jayapura" class="link-light">
             <div class="stat-item">
               <div class="stat-icon h1">
                 <i class="bi bi-graph-up"></i>
               </div>
               <div class="stat-content">
                 <h4 class="text-light">Statistik Kota</h4>
-                <p class="mb-0">Rekapan Data Statistik Secara Umum</p>
+                <p class="mb-0 fw-light" style="font-size: 1rem;">Rekapan Data Statistik Secara Umum</p>
               </div>
             </div>
           </a>
@@ -173,14 +240,14 @@
 
         <div class="col-lg-3 col-md-6">
 
-          <a href="#" class="link-light">
+          <a href="#opd-kota-jayapura" class="link-light">
             <div class="stat-item">
               <div class="stat-icon h1">
                 <i class="bi bi-award"></i>
               </div>
               <div class="stat-content">
                 <h4 class="text-light">Perangkat Daerah</h4>
-                <p class="mb-0">Nama OPD dan Alamat Situs</p>
+                <p class="mb-0 fw-light" style="font-size: 1rem;">Nama OPD dan Alamat Situs</p>
               </div>
             </div>
 
@@ -212,14 +279,25 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Beranda</a></li>
+          <li><a href="#beranda" class="active">Beranda</a></li>
 
           <li class="dropdown"><a href="#"><span>Profil Kota</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Sambutan Wali Kota</a></li>
-              <li><a href="#">Sejarah Kota</a></li>
-              <li><a href="#">Visi & Misi</a></li>
+              <li><a href="sambutan-walikota.html">Sambutan Wali Kota</a></li>
+              <li><a href="sejarah-kota.html">Sejarah Kota</a></li>
+              <li><a href="visi-misi.html">Visi & Misi</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Pemerintahan</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Walikota & Wakil Walikota</a></li>
+              <li><a href="#">Sekretaris Daerah</a></li>
+              <li><a href="#">OPD (Organisasi Perangkat Daerah)</a></li>
+              <li><a href="#">Distrik & Kelurahan</a></li>
+              <li><a href="#">Desa & Kampung</a></li>
             </ul>
           </li>
 
@@ -243,13 +321,13 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Dokumen</a></li>
-          <li><a href="#contact">Galeri</a></li>
+          <li><a href="#kontak">Dokumen</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="index.html#opd-kota-jayapura" title="OPD (Organisasi Perangkat Daerah)"><i
+          class="fa-solid fa-building me-2"></i>OPD</a>
 
     </div>
   </header>
@@ -280,24 +358,15 @@
 
         <div class="row gy-4 justify-content-between py-5">
 
-          <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-3" data-aos="fade-up" data-aos-delay="200">
 
 
 
 
-            <div class="card text-bg-dark border-0">
-              <div class="position-relative">
-                <img src="./public/images/berita/sample-1.webp" class="card-img" alt="Gambar Berita"
-                  style="height: 900px; object-fit: cover;">
-
-                <!-- Overlay konten di atas gambar -->
-                <div
-                  class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center bg-dark bg-opacity-50">
-                  <h5 class="card-title fw-bold">Judul Berita</h5>
-                  <p class="card-text">Konten teks berada di atas gambar dengan efek overlay gelap.</p>
-                  <a href="#" class="btn btn-light mt-2">Selengkapnya</a>
-                </div>
-              </div>
+            <div class="card text-bg-dark border-0 stat-item">
+              <a href="sambutan-walikota.html">
+                <img src="./public/images/sidebar-banner/sidebar-banner-02.png" alt="" class="w-100">
+              </a>
             </div>
 
 
@@ -305,12 +374,13 @@
 
           </div>
 
-          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
 
             <div class="row border-bottom mb-5">
               <div class="col">
                 <h5 class="display-5 fw-bold text-dark">Pengumuman</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tenetur! Officia quidem molestiae sint distinctio?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tenetur! Officia quidem molestiae sint
+                  distinctio?</p>
               </div>
             </div>
 
@@ -330,7 +400,7 @@
                       Warga dapat menikmati pertunjukan tarian, musik lokal, dan bazar kuliner.
                       Acara ini bertujuan memperkenalkan kekayaan budaya kepada wisatawan dan generasi muda.
                     </p>
-                    <a href="#" class="text-decoration-none">Baca Selengkapnya...</a>
+                    <a href="#" class="text-decoration-none link-yellow-jpr">Baca Selengkapnya...</a>
                   </div>
                 </div>
 
@@ -345,7 +415,7 @@
                       Warga dapat menikmati pertunjukan tarian, musik lokal, dan bazar kuliner.
                       Acara ini bertujuan memperkenalkan kekayaan budaya kepada wisatawan dan generasi muda.
                     </p>
-                    <a href="#" class="text-decoration-none">Baca Selengkapnya...</a>
+                    <a href="sejarah-kota.html" class="text-decoration-none link-yellow-jpr">Baca Selengkapnya...</a>
                   </div>
                 </div>
 
@@ -357,24 +427,24 @@
 
           <div class="col-xl-3" data-aos="fade-up" data-aos-delay="200">
 
-            <a href="#" class="mb-3 d-block">
-              <img src="./public/images/berita/sample-1.webp" class="img-fluid w-100 rounded shadow"
-                style="object-fit: cover;" alt="Pelatihan Coding untuk Siswa SMK">
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/sidebar-banner-right/sidebar-right-04.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
             </a>
 
-            <a href="#" class="mb-3 d-block">
-              <img src="./public/images/berita/sample-1.webp" class="img-fluid w-100 rounded shadow"
-                style="object-fit: cover;" alt="Pelatihan Coding untuk Siswa SMK">
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/sidebar-banner-right/sidebar-right-02.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
             </a>
 
-            <a href="#" class="mb-3 d-block">
-              <img src="./public/images/berita/sample-1.webp" class="img-fluid w-100 rounded shadow"
-                style="object-fit: cover;" alt="Pelatihan Coding untuk Siswa SMK">
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/sidebar-banner-right/sidebar-right-03.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
             </a>
 
-            <a href="#" class="mb-3 d-block">
-              <img src="./public/images/berita/sample-1.webp" class="img-fluid w-100 rounded shadow"
-                style="object-fit: cover;" alt="Pelatihan Coding untuk Siswa SMK">
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/sidebar-banner-right/sidebar-right-05.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
             </a>
 
           </div>
@@ -395,12 +465,19 @@
     <section class="bg-light">
       <div class="container">
 
+
+
         <div class="row my-5">
-          <div class="col">
-            <h2 class="display-3 text-dark fw-bold">Berita Terkini</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque veniam expedita voluptatum maxime, odio
-              dicta molestiae voluptatibus optio quas accusantium vero fugit tempore, consequatur corporis officiis
-              ratione blanditiis aliquam similique.</p>
+          <div class="col-xl-4">
+            <span class="text-yellow-jpr">BERITA TERKINI</span>
+            <h2 class="display-5 text-red-jpr fw-bold">Berbagai Publikasi Informasi Terbaru</h2>
+          </div>
+          <div class="col-xl-8 d-flex align-items-center">
+            <p class="text-secondary" style="font-size: 80%;">Temukan beragam berita dan informasi terkini seputar
+              kegiatan, kebijakan, serta perkembangan di wilayah Kota Jayapura. Setiap informasi disajikan untuk
+              memberikan pemahaman yang lebih luas kepada masyarakat mengenai berbagai program dan inovasi daerah.
+              Melalui publikasi ini, diharapkan masyarakat dapat berpartisipasi aktif dalam mendukung pembangunan Kota
+              Jayapura yang berkelanjutan.</p>
           </div>
         </div>
 
@@ -412,20 +489,20 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-5">
-                  <img src="./public/images/berita/sample-1.webp" class="img-fluid h-100 w-100"
-                    style="object-fit: cover;" alt="Pelatihan Coding untuk Siswa SMK">
+                  <img src="./public/images/berita/berita-01.png" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h2 class="h5 fw-bold">Pelatihan Coding untuk Siswa SMK Jayapura</h2>
+                    <h2 class="h5 fw-bold">Mengenal Kota Jayapura</h2>
                     <p class="card-text">
-                      Yayasan SAGU bekerja sama dengan relawan teknologi mengadakan pelatihan coding dasar
-                      bagi siswa SMK jurusan RPL dan TKJ. Kegiatan ini bertujuan mengenalkan logika pemrograman
-                      serta penggunaan AI tools untuk bisnis digital.
+                      Kota Jayapura merupakan ibu kota Provinsi Papua yang menjadi pintu gerbang utama di ujung timur
+                      Indonesia. Dikelilingi oleh perbukitan dan Teluk Youtefa yang indah, kota ini menyimpan
+                      keanekaragaman budaya dan sejarah yang menarik.
                     </p>
-                    <a href="#" class="text-decoration-none fw-semibold">Baca Selengkapnya...</a>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
                   </div>
                 </div>
               </div>
@@ -439,20 +516,21 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-5">
-                  <img src="./public/images/berita/sample-1.webp" class="img-fluid h-100 w-100"
-                    style="object-fit: cover;" alt="Launching Aplikasi Pelayanan Publik">
+                  <img src="./public/images/berita/berita-02.png" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h2 class="h5 fw-bold">Launching Aplikasi Pelayanan Publik Digital</h2>
+                    <h2 class="h5 fw-bold">Jembatan Merah Sebagai Destinasi Wisata Baru</h2>
                     <p class="card-text">
-                      Pemerintah Kabupaten Jayapura resmi meluncurkan aplikasi pelayanan publik digital.
-                      Aplikasi ini dirancang untuk mempermudah warga dalam mengurus dokumen administrasi
-                      tanpa harus datang langsung ke kantor pemerintahan.
+                      Jembatan Merah Jayapura kini menjadi salah satu ikon wisata favorit masyarakat dan pengunjung.
+                      Dengan pemandangan laut dan perbukitan yang menakjubkan, jembatan ini menjadi lokasi ideal untuk
+                      bersantai atau berfoto. Pada malam hari, lampu warna-warni di sepanjang jembatan menciptakan
+                      suasana yang memikat.
                     </p>
-                    <a href="#" class="text-decoration-none fw-semibold">Baca Selengkapnya...</a>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
                   </div>
                 </div>
               </div>
@@ -466,20 +544,21 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-5">
-                  <img src="./public/images/berita/sample-1.webp" class="img-fluid h-100 w-100"
-                    style="object-fit: cover;" alt="Pelatihan Coding untuk Siswa SMK">
+                  <img src="./public/images/berita/berita-03.png" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h2 class="h5 fw-bold">Pelatihan Coding untuk Siswa SMK Jayapura</h2>
+                    <h2 class="h5 fw-bold">Kegiatan Tahunan: Festival Teluk Humbold</h2>
                     <p class="card-text">
-                      Yayasan SAGU bekerja sama dengan relawan teknologi mengadakan pelatihan coding dasar
-                      bagi siswa SMK jurusan RPL dan TKJ. Kegiatan ini bertujuan mengenalkan logika pemrograman
-                      serta penggunaan AI tools untuk bisnis digital.
+                      Festival Teluk Humbold merupakan ajang budaya tahunan yang selalu dinantikan warga Jayapura.
+                      Beragam kegiatan seperti lomba perahu, tarian tradisional, dan pameran kuliner lokal turut
+                      memeriahkan suasana. Acara ini menjadi wadah untuk memperkenalkan kekayaan seni dan budaya Papua
+                      kepada wisatawan nusantara maupun mancanegara.
                     </p>
-                    <a href="#" class="text-decoration-none fw-semibold">Baca Selengkapnya...</a>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
                   </div>
                 </div>
               </div>
@@ -493,20 +572,20 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-5">
-                  <img src="./public/images/berita/sample-1.webp" class="img-fluid h-100 w-100"
-                    style="object-fit: cover;" alt="Launching Aplikasi Pelayanan Publik">
+                  <img src="./public/images/berita/berita-04.png" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h2 class="h5 fw-bold">Launching Aplikasi Pelayanan Publik Digital</h2>
+                    <h2 class="h5 fw-bold">Berbagai Suku Asli di Kota Jayapura</h2>
                     <p class="card-text">
-                      Pemerintah Kabupaten Jayapura resmi meluncurkan aplikasi pelayanan publik digital.
-                      Aplikasi ini dirancang untuk mempermudah warga dalam mengurus dokumen administrasi
-                      tanpa harus datang langsung ke kantor pemerintahan.
+                      Kota Jayapura dihuni oleh beragam suku asli Papua seperti suku Sentani, Tobati, dan Kayu Batu.
+                      Masing-masing suku memiliki bahasa, tradisi, dan seni khas yang menjadi identitas kebanggaan.
+                      Keberagaman ini menjadikan Jayapura sebagai contoh nyata harmoni antarbudaya di Tanah Papua.
                     </p>
-                    <a href="#" class="text-decoration-none fw-semibold">Baca Selengkapnya...</a>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
                   </div>
                 </div>
               </div>
@@ -519,6 +598,31 @@
 
 
         </div>
+        <!-- .row end -->
+
+        <div class="row py-5">
+          <div class="col">
+
+            <nav aria-label="Halaman contoh">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Sebelumnya</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Selanjutnya</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+        <!-- .row end -->
+
       </div>
     </section>
     <!-- end section -->
@@ -532,57 +636,131 @@
 
 
 
+
+
+
+
+
+
+
+
+
+    <!-- Infografis Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <div class="row py-5">
+          <div class="col text-center">
+            <h2 class="display-4 fw-bold text-red-jpr">Infografis</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" class="">
+              <div class="card-box stat-item">
+                <img
+                  src="https://jayapurakota.bps.go.id/_next/image?url=https%3A%2F%2Fweb-api.bps.go.id%2Fcover.php%3Ff%3DxnG6TlSjetEogTyH52tRjXBsaGdSbWNBS1UyNWoxdVllS0NXYlVDOVR3THlhbmREUTNMN3lZY3pnK2RxY3NMUUVkVW9zYkdUQ0Rka2NWZlZWdlhrdTZQdENSQ2dybllNMDNIZE56MFQrUkk2Y0NjMjB0eTdrcmhZMVg4K1ZGdmtTdklseHpyREh6eHp0cHZuS3VQZm43aWRhRURFQUhMbHZQa0ZYZz09&w=1080&q=75"
+                  alt="" class="w-100">
+                <h5 class="mt-3">Perkembangan Transportasi Kota Jayapura April 2024</h5>
+                <p><a
+                    href="https://jayapurakota.bps.go.id/id/pressrelease/2024/06/03/280/perkembangan-transportasi-kota-jayapura-april-2024.html"
+                    target="_blank"><i class="fa-solid fa-globe"></i> Situs Sumber</a></p>
+
+              </div>
+            </a>
+          </div><!-- item end -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" class="">
+              <div class="card-box stat-item">
+                <img
+                  src="https://jayapurakota.bps.go.id/_next/image?url=https%3A%2F%2Fweb-api.bps.go.id%2Fcover.php%3Ff%3DtWigBfLabo1X69GbLViJJGwxUWtTdi9XdXhzaG9aM3Y3andPRklIa0JyZFRvWXZJNHZQL2NRU3ZhNDBOZGRjRFNxNWd3NTY5R1RmTkE3UzREWW1xQWR1WXVQSE5iRDRnRm1FOU55OGxDbWFnMUpKekRYdVFQQnRvZG9nV3VrQnRjVDR5dXlqMm1yKzcyVksxZGVFZnd1RWRnSjVDSlpsNG9Scnc2dz09&w=3840&q=75"
+                  alt="" class="w-100">
+                <h5 class="mt-3">Standar Pelayanan BPS di Kota Jayapura</h5>
+                <p><a href="https://jayapurakota.bps.go.id" target="_blank"><i class="fa-solid fa-globe"></i> Situs
+                    Sumber</a></p>
+
+              </div>
+            </a>
+          </div><!-- item end -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" class="">
+              <div class="card-box stat-item">
+                <img
+                  src="https://web-api.bps.go.id/cover.php?f=8JQH68pBkXEnDf501GI7/XdmTmlWS01vU0VWM0FSZGtpTlppZUp5YzB0bHFVL3YyUW52N0NVZDB2ZXFGNHlNNGxvaVkvWXZPNmZoUTRxSFE4WTFMNmMyUldYZTIyRG1MVUV4QldZaDdqc21XSTR6bXN1b1NtZTFWZzdkRGdPK2p2SlcvakRTRWJQOFhxVTU0aXZXQ29LMlZhckFpcnRFbkkvOGVPZz09"
+                  alt="" class="w-100">
+                <h5 class="mt-3">Profil Kemiskinan Maret 2024 Provinsi Papua</h5>
+                <p><a href="https://web-api.bps.go.id" target="_blank"><i class="fa-solid fa-globe"></i> Situs
+                    Sumber</a></p>
+
+              </div>
+            </a>
+          </div><!-- item end -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+
+
+
+
+
+
+
+
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section bg-light-jpr">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 align-items-center justify-content-between">
+        <div class="row py-5 gy-4 align-items-center justify-content-between">
 
           <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
-            <span class="about-meta">BERITA TERKINI</span>
-            <h2 class="about-title">Voluptas enim suscipit temporibus</h2>
-            <p class="about-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.</p>
-
-            <div class="row feature-list-wrapper">
-              <div class="col-md-6">
-                <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Lorem ipsum dolor sit amet</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Consectetur adipiscing elit</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Sed do eiusmod tempor</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Incididunt ut labore et</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Dolore magna aliqua</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ut enim ad minim veniam</li>
-                </ul>
-              </div>
-            </div>
+            <span class="text-uppercase text-yellow-jpr">Selayang Pandang</span>
+            <h2 class="display-4 text-red-jpr fw-bold">Sekilas Tentang Kota Jayapura</h2>
+            <p class="about-description">Kota Jayapura merupakan ibu kota Provinsi Papua, yang terletak di pesisir utara
+              Pulau Papua dan berbatasan langsung dengan Samudera Pasifik serta negara tetangga Papua Nugini. Sebagai
+              pusat pemerintahan, perekonomian, pendidikan, dan kebudayaan di wilayah paling timur Indonesia, Jayapura
+              memiliki peran strategis dalam pembangunan kawasan Papua.</p>
+            <p class="about-description">Didirikan pada tahun 1910 dengan nama Hollandia, kota ini kemudian mengalami
+              beberapa perubahan nama — Kota Baru, Sukarnopura, hingga akhirnya pada tahun 1968 resmi bernama Jayapura,
+              yang berarti “Kota Kemenangan.” <a href="#" class="mb-5  link-yellow-jpr">Baca Selengkapnya...</a></p>
 
             <div class="info-wrapper">
               <div class="row gy-4">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                   <div class="profile d-flex align-items-center gap-3">
-                    <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
+                    <img src="public/images/foto-profil/walikota.png" alt="Foto Walikota" class="profile-image">
                     <div>
-                      <h4 class="profile-name">Mario Smith</h4>
-                      <p class="profile-position">CEO &amp; Founder</p>
+                      <h4 class="profile-name" style="font-size: 80%;">Abisai Rollo, Sh., MH</h4>
+                      <p class="text-yellow-jpr">Walikota</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-7">
-                  <div class="contact-info d-flex align-items-center gap-2">
-                    <i class="bi bi-telephone-fill"></i>
+
+                <div class="col-lg-6">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="public/images/foto-profil/wakil-walikota.png" alt="Foto Wakil Walikota"
+                      class="profile-image">
                     <div>
-                      <p class="contact-label">Call us anytime</p>
-                      <p class="contact-number">+123 456-789</p>
+                      <h4 class="profile-name" style="font-size: 80%;">Dr. Ir. H. Rustan Saru, M.M</h4>
+                      <p class="text-yellow-jpr">Wakil Walikota</p>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -590,12 +768,14 @@
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
             <div class="image-wrapper">
               <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-                <img src="assets/img/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
-                <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+                <img src="public/images/latar-belakang/latar-belakang-01.png" alt="Business Meeting"
+                  class="img-fluid main-image rounded-4">
+                <img src="public/images/latar-belakang/latar-belakang-02.png" alt="Team Discussion"
+                  class="img-fluid small-image rounded-4">
               </div>
-              <div class="experience-badge floating">
-                <h3>15+ <span>Years</span></h3>
-                <p>Of experience in business service</p>
+              <div class="experience-badge floating bg-dark">
+                <h3>🎉 115 <span>Tahun </span></h3> <br>
+                <p>7 Maret 1910 - 7 Maret 2025 & 10 Maret 1910 - 10 Maret 2025</p>
               </div>
             </div>
           </div>
@@ -609,9 +789,14 @@
     <section id="features" class="features section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <div class="container my-5" data-aos="fade-up">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="display-4 fw-bold text-red-jpr">Profil Pejabat/Pimpinan</h2>
+            <p>Sekilas profil pejabat/pimpinan Pemerintah Kota Jayapura. <br> Menampilkan nama lengkap, tempat/tanggal
+              lahir, hingga jabatan dan masa periode menjabat.</p>
+          </div>
+        </div>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -622,19 +807,19 @@
 
             <li class="nav-item">
               <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                <h4>Modisit</h4>
+                <h4><i class="fa-solid fa-user" style="font-size: 1rem;"></i> Walikota</h4>
               </a>
             </li><!-- End tab nav item -->
 
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                <h4>Praesenti</h4>
+                <h4><i class="fa-solid fa-user" style="font-size: 1rem;"></i> Wakil Walikota</h4>
               </a><!-- End tab nav item -->
 
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                <h4>Explica</h4>
+                <h4><i class="fa-solid fa-user" style="font-size: 1rem;"></i> Sekretaris Daerah</h4>
               </a>
             </li><!-- End tab nav item -->
 
@@ -647,24 +832,24 @@
           <div class="tab-pane fade active show" id="features-tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Voluptatem dignissimos provident</h3>
+                <h3>Walikota</h3>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore
                   magna aliqua.
                 </p>
+                <h5 class="fw-bold">Biodata Singkat</h5>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                      velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
-                      fugiat nulla pariatur.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Nama Lengkap: <b>Abisai Rollo, Sh., MH</b></span></li>
+                  <li><i class="bi bi-dot"></i> <span>Tempat, Tanggal Lahir: ..., 14 November 1967</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Agama: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Pendidikan: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Jabatan: <b>Walikota Jayapura</b></span></li>
+                  <li><i class="bi bi-dot"></i> <span>Periode Menjabat: <b>2025 - 2030</b></span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-illustration-1.webp" alt="" class="img-fluid">
+                <img src="./public/images/foto-profil/walikota.png" alt="Foto Walikota Jayapura" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -672,26 +857,24 @@
           <div class="tab-pane fade" id="features-tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Neque exercitationem debitis</h3>
+                <h3>Wakil Walikota</h3>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore
                   magna aliqua.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                      velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui
-                      a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
-                      fugiat nulla pariatur.</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Nama Lengkap: <b>Dr. Ir. H. Rustan Saru, M.M</b></span></li>
+                  <li><i class="bi bi-dot"></i> <span>Tempat, Tanggal Lahir: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Agama: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Pendidikan: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Jabatan: <b>Wakil Walikota Jayapura</b></span></li>
+                  <li><i class="bi bi-dot"></i> <span>Periode Menjabat: <b>2025 - 2030</b></span></li>
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-illustration-2.webp" alt="" class="img-fluid">
+                <img src="./public/images/foto-profil/wakil-walikota.png" alt="Foto Walikota Jayapura"
+                  class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -699,23 +882,23 @@
           <div class="tab-pane fade" id="features-tab-3">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Voluptatibus commodi accusamu</h3>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                      velit.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui
-                      a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                </ul>
+                <h3>Sekretaris Daerah</h3>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore
                   magna aliqua.
                 </p>
+                <ul>
+                  <li><i class="bi bi-dot"></i> <span>Nama Lengkap: <b>...</b></span></li>
+                  <li><i class="bi bi-dot"></i> <span>Tempat, Tanggal Lahir: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Agama: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Pendidikan: ...</span></li>
+                  <li><i class="bi bi-dot"></i> <span>Jabatan: <b>...</b></span></li>
+                  <li><i class="bi bi-dot"></i> <span>Periode Menjabat: <b>2025 - 2030</b></span></li>
+                </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-illustration-3.webp" alt="" class="img-fluid">
+                <img src="./public/images/foto-profil/profil-00.png" alt="Foto Walikota Jayapura" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -726,166 +909,20 @@
 
     </section><!-- /Features Section -->
 
-    <!-- Features Cards Section -->
-    <section id="features-cards" class="features-cards section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="feature-box orange">
-              <i class="bi bi-award"></i>
-              <h4>Corporis voluptates</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="feature-box blue">
-              <i class="bi bi-patch-check"></i>
-              <h4>Explicabo consectetur</h4>
-              <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="feature-box green">
-              <i class="bi bi-sunrise"></i>
-              <h4>Ullamco laboris</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="feature-box red">
-              <i class="bi bi-shield-check"></i>
-              <h4>Labore consequatur</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Cards Section -->
-
-    <!-- Features 2 Section -->
-    <section id="features-2" class="features-2 section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-4">
-
-            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
-              <div class="d-flex align-items-center justify-content-end gap-4">
-                <div class="feature-content">
-                  <h3>Use On Any Device</h3>
-                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui
-                    quis mi consectetuer lacinia.</p>
-                </div>
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-display"></i>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
-              <div class="d-flex align-items-center justify-content-end gap-4">
-                <div class="feature-content">
-                  <h3>Feather Icons</h3>
-                  <p>Phasellus ullamcorper ipsum rutrum nunc nunc nonummy metus vestibulum volutpat sapien arcu sed
-                    augue aliquam erat volutpat.</p>
-                </div>
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-feather"></i>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-            <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
-              <div class="d-flex align-items-center justify-content-end gap-4">
-                <div class="feature-content">
-                  <h3>Retina Ready</h3>
-                  <p>Aenean tellus metus bibendum sed posuere ac mattis non nunc vestibulum fringilla purus sit amet
-                    fermentum aenean commodo.</p>
-                </div>
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-eye"></i>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-          </div>
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="phone-mockup text-center">
-              <img src="assets/img/phone-app-screen.webp" alt="Phone Mockup" class="img-fluid">
-            </div>
-          </div><!-- End Phone Mockup -->
-
-          <div class="col-lg-4">
-
-            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
-              <div class="d-flex align-items-center gap-4">
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-code-square"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>W3c Valid Code</h3>
-                  <p>Donec vitae sapien ut libero venenatis faucibus nullam quis ante etiam sit amet orci eget eros
-                    faucibus tincidunt.</p>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
-              <div class="d-flex align-items-center gap-4">
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-phone"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>Fully Responsive</h3>
-                  <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem
-                    neque sed ipsum.</p>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-            <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
-              <div class="d-flex align-items-center gap-4">
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-browser-chrome"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>Browser Compatibility</h3>
-                  <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper
-                    nisi aenean vulputate.</p>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Features 2 Section -->
 
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section">
+    <section id="call-to-action" class="call-to-action section bg-primary d-flex align-items-center"
+      style="background-image: url('./public/images/latar-belakang/latar-belakang-05.png'); background-size: cover;background-position-y: center;background-attachment:fixed;height: 1080px;">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row content justify-content-center align-items-center position-relative">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="display-4 mb-4">Maecenas tempus tellus eget condimentum</h2>
-            <p class="mb-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-              Donec velit neque, auctor sit amet aliquam vel</p>
-            <a href="#" class="btn btn-cta">Call To Action</a>
+            <p class="mb-4 display-4"><b>Visi</b> Kota Jayapura</p>
+            <h2 class="display-6 mb-4 stat-item">"Terwujudnya Kota Jayapura sebagai Kota Jasa yang <b>BERBUDAYA,
+                RELIGIUS, MAJU, MANDIRI, dan SEJAHTERA</b> menuju Jayapura Emas"</h2>
+            <a href="#misi-kota-jayapura" class="btn btn-cta">Lihat Misi Pemerintah Kota Jayapura<i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
 
           <!-- Abstract Background Elements -->
@@ -937,8 +974,589 @@
 
     </section><!-- /Call To Action Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
+    <!-- Features 2 Section -->
+    <section id="misi-kota-jayapura" class="features-2 section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row py-5">
+          <div class="col">
+            <p class="mb-4 text-center display-4 text-red-jpr"><b>Misi</b> Kota Jayapura</p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-4">
+
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="d-flex align-items-center justify-content-end gap-4 stat-item">
+                <div class="feature-content">
+                  <!-- <h3>1.</h3> -->
+                  <p>Mewujudkan Kehidupan Masyarakat Yang Berahlak Dan Sejahtera Dengan Memegang Teguh Nilai – Nilai
+                    Keagamaan, Menjaga Keluhuran Adat Istiadat</p>
+                </div>
+                <div class="feature-icon flex-shrink-0 text-re">
+                  <i class="bi bi-people"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
+              <div class="d-flex align-items-center justify-content-end gap-4 stat-item">
+                <div class="feature-content">
+                  <!-- <h3>Feather Icons</h3> -->
+                  <p>Mewujudkan Pemerataan Pembangunan Ekonomi, Sosial Yang Berkelanjutan Dengan Memperhatikan Daya
+                    Dukung Lingkungan</p>
+                </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-building"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
+              <div class="d-flex align-items-center justify-content-end gap-4 stat-item">
+                <div class="feature-content">
+                  <!-- <h3>Retina Ready</h3> -->
+                  <p>Meningkatkan Kemandirian Ekonomi Yang Bertumpu Pada Sektor Jasa Perdagangan, Ekonomi Kreatif,
+                    Pariwisata, Dan Kelestarian Budaya Lokal</p>
+                </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-display"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+          </div>
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="phone-mockup text-center stat-item">
+              <img src="./public/images/profil/logo-kota-jayapura.png" alt="Phone Mockup" class="img-fluid">
+            </div>
+          </div><!-- End Phone Mockup -->
+
+          <div class="col-lg-4">
+
+            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="d-flex align-items-center gap-4 stat-item">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <div class="feature-content">
+                  <!-- <h3>W3c Valid Code</h3> -->
+                  <p>Mewujudkan Tata Kelola Pemerintahan Yang Bersih Dan Berwibawa Melalui Transformasi Digital Dengan
+                    Reformasi Birokrasi</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
+              <div class="d-flex align-items-center gap-4 stat-item">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-buildings"></i>
+                </div>
+                <div class="feature-content">
+                  <!-- <h3>Fully Responsive</h3> -->
+                  <p>Memperkuat Pemenuhan Kebutuhan Dasar Pendidikan Kesehatan Untuk Melahirkan Sdm Unggul, Produktif,
+                    Dan Berkarakter.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+            <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
+              <div class="d-flex align-items-center gap-4 stat-item">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div class="feature-content">
+                  <!-- <h3>Browser Compatibility</h3> -->
+                  <p>Mengejewantahkan Daerah Berdasarkan Asta Cita.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features 2 Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Services Section -->
+    <section id="opd-kota-jayapura" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container py-5" data-aos="fade-up">
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-4 fw-bold text-red-jpr">OPD (Organisasi Perangkat Daerah)</h2>
+            <p class="text-secondary">Organisasi Perangkat Daerah (OPD) Kota Jayapura berperan penting dalam
+              melaksanakan urusan pemerintahan
+              dan pelayanan publik di berbagai bidang. Melalui koordinasi yang solid dan profesionalisme aparatur,
+              setiap OPD berkomitmen untuk mewujudkan tata kelola pemerintahan yang efektif, transparan, dan berpihak
+              kepada masyarakat.</p>
+          </div>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-building"></i>
+              </div>
+              <div>
+                <h3>Badan Pengelola Keuangan dan Aset Daerah</h3>
+                <p class="text-secondary" style="font-size: 80%;"><i class="fa-solid fa-map-marker"></i> CMPV+W46,
+                  Entrop, Distrik Jayapura Selatan, Kota Jayapura, Papua.</p>
+                <a href="#" class="read-more">Kunjungi Situs <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-building"></i>
+              </div>
+              <div>
+                <h3>Dinas Kesehatan</h3>
+                <p class="text-secondary" style="font-size: 80%;"><i class="fa-solid fa-map-marker"></i> CMQR+8V4, JL.
+                  Megapura Skyline, Mandala, Kec. Jayapura Utara, Kota Jayapura, Papua 99225</p>
+                <a href="#" class="read-more">Kunjungi Situs <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-building"></i>
+              </div>
+              <div>
+                <h3>Dinas Sosial</h3>
+                <p class="text-secondary" style="font-size: 80%;"><i class="fa-solid fa-map-marker"></i> Jalan Balai
+                  Kota No.mor 1, Entrop, Distrik Jayapura Selatan, Kota Jayapura, Papua 99224, Indonesia</p>
+                <a href="#" class="read-more">Kunjungi Situs <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section bg-light">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <div class="row py-5">
+          <div class="col">
+            <h2 class="display-4 fw-bold text-red-jpr">Etalasi Kota Jayapura</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-01.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Pemerintahan</h4>
+                  <p class="text-light-jpr small mb-0">Gambaran umum pemerintahan dan organisasi perangkat daerah di
+                    Kota Jayapura.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-01.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Pendidikan</h4>
+                  <p class="text-light-jpr small mb-0">Gambaran umum pemerintahan dan organisasi perangkat daerah di
+                    Kota Jayapura.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-01.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Kesehatan</h4>
+                  <p class="text-light-jpr small mb-0">Gambaran umum pemerintahan dan organisasi perangkat daerah di
+                    Kota Jayapura.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-03.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Transportasi</h4>
+                  <p class="text-light-jpr small mb-0">Keberagaman suku dan bahasa yang dapat ditemui. Baik secara
+                    Nasional maupun Lokal.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-03.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Informasi dan Komunikasi</h4>
+                  <p class="text-light-jpr small mb-0">Keberagaman suku dan bahasa yang dapat ditemui. Baik secara
+                    Nasional maupun Lokal.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-02.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Destinasi Wisata</h4>
+                  <p class="text-light-jpr small mb-0">Daftar berbagai tujuan wisata populer dan yang paling disarankan.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-02.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Hotel</h4>
+                  <p class="text-light-jpr small mb-0">Daftar berbagai tujuan wisata populer dan yang paling disarankan.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+          <div class="col-lg-3">
+            <a href="#" class="text-decoration-none">
+              <div class="card border-0 stat-item position-relative overflow-hidden">
+                <img src="./public/images/berita/berita-02.png" alt="" class="img-card-top w-100">
+
+                <!-- Overlay teks di atas gambar -->
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));">
+                  <h4 class="text-yellow-jpr fw-bold mb-1">Cafe & Restaurant</h4>
+                  <p class="text-light-jpr small mb-0">Daftar berbagai tujuan wisata populer dan yang paling disarankan.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- .col end -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section class="faq-9 faq section light-background" id="faq">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5" data-aos="fade-up">
+            <h2 class="display-4 fw-bold text-red-jpr">Punya pertanyaan? Lihat daftar FAQ</h2>
+            <p class="faq-description">Lihat berbagai pertanyaan umum yang sering ditanyakan oleh pengunjung situs atau
+              masyarakat.</p>
+            <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+              <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-container">
+
+
+
+
+              <div class="faq-item faq-active">
+                <h3>Bagaimana cara mengurus KTP elektronik (e-KTP) di Kota Jayapura?</h3>
+                <div class="faq-content">
+                  <p>Untuk pembuatan atau pembaruan e-KTP, warga dapat datang ke Dinas Kependudukan dan Pencatatan Sipil
+                    Kota Jayapura
+                    dengan membawa Kartu Keluarga dan surat pengantar dari kelurahan. Layanan juga tersedia melalui
+                    loket pelayanan terpadu di kantor distrik.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Di mana saya bisa mendapatkan informasi tentang lowongan kerja di lingkungan Pemerintah Kota
+                  Jayapura?</h3>
+                <div class="faq-content">
+                  <p>Informasi resmi mengenai rekrutmen dan lowongan kerja pemerintah dapat ditemukan di situs web
+                    BKPSDM Kota Jayapura
+                    atau melalui halaman “Pengumuman” pada website resmi Pemerintah Kota Jayapura.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Bagaimana cara melaporkan pengaduan atau keluhan masyarakat?</h3>
+                <div class="faq-content">
+                  <p>Masyarakat dapat menyampaikan pengaduan melalui menu “Layanan Pengaduan” di website ini, atau
+                    secara langsung ke
+                    Dinas Komunikasi dan Informatika Kota Jayapura. Semua laporan akan diteruskan ke instansi terkait
+                    untuk ditindaklanjuti.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Apakah Kota Jayapura memiliki layanan online untuk perizinan usaha?</h3>
+                <div class="faq-content">
+                  <p>Ya. Pemerintah Kota Jayapura telah menyediakan Sistem Online Perizinan Terpadu (OSS) yang
+                    memudahkan pelaku usaha untuk mengurus izin
+                    secara digital tanpa harus datang ke kantor.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Di mana saya bisa mendapatkan jadwal kegiatan dan event resmi di Kota Jayapura?</h3>
+                <div class="faq-content">
+                  <p>Jadwal kegiatan pemerintahan, festival budaya, dan event kota dapat dilihat di menu “Agenda &
+                    Event” pada website ini
+                    atau melalui akun media sosial resmi Pemerintah Kota Jayapura.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Faq Section -->
+
+    <!-- Call To Action 2 Section -->
+    <section id="call-to-action-2" class=" section dark-background"
+      style="background-image: url('./public/images/latar-belakang/latar-belakang-04.png'); background-size: cover;background-position-y: center;background-attachment:fixed;">
+
+      <div class="container">
+        <div class="row justify-content-center py-5 my-5" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3 class="display-3 fw-bold text-yellow-jpr">Punya Pengaduan?</h3>
+              <p>Kirim pesan pengaduan Anda melalui fitur "Pengaduan Masyarakat". Lengkapi data diri Anda secara benar
+                untuk memudahkan kami menghubungi.</p>
+              <a class="cta-btn" href="#kontak"><i class="fa-solid fa-message"></i> Kirim Pengaduan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action 2 Section -->
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact section bg-red-jpr">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <div class="row py-5">
+          <div class="col text-center">
+            <h2 class="display-4 fw-bold text-light-jpr">Kontak</h2>
+            <p class="text-light-jpr">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+          </div>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-dark-jpr">Informasi Kontak</h3>
+              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
+              </p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Alamat Kantor</h4>
+                  <p>Jl. Balai Kota No. 1, Kelurahan Entrop, Distrik Jayapura Selatan, Kota Jayapura</p>
+                  <p>Provinsi Papua - Indoensia</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Nomor Telepon</h4>
+                  <p>(0967) xxxxxx</p>
+                  <p>(0967) xxxxxx</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Alamat Email</h4>
+                  <p>info@jayapurakota.go.id</p>
+                  <p>pengaduan@jayapurakota.go.id</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3><i class="fa-solid fa-message"></i> Pengaduan Masyarakat</h3>
+              <p>Lengkapi data diri Anda dengan baik dan benar. Kirimkan pesan pengaduan secara terperinci dan jelas.
+              </p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Nama Lengkap" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Alamat Email">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="telp" class="form-control" name="no_telp" placeholder="Nomor Telepon">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="Judul Pesan" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Isi Pesan"
+                      required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Patners Section -->
+    <section id="clients" class="clients section bg-white">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -977,576 +1595,78 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-ppid-kota-jayapura.png" class="img-fluid"
+                  alt="PPID Kota Jayapura" title="PPID Kota Jayapura">
+              </a>
+            </div>
+            <!-- item end -->
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-lpse.png" class="img-fluid"
+                  alt="LPSE Kota Jayapura" title="LPSE Kota Jayapura">
+              </a>
+            </div>
+            <!-- item end -->
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-papua.png" class="img-fluid"
+                  alt="Provinsi Papua" title="Provinsi Papua">
+              </a>
+            </div>
+            <!-- item end -->
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-bps-kota-jayapura.png" class="img-fluid"
+                  alt="Badan Pusat Statistik Kota Jayapura" title="Badan Pusat Statistik Kota Jayapura">
+              </a>
+            </div>
+            <!-- item end -->
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-ppid-kota-jayapura.png" class="img-fluid"
+                  alt="PPID Kota Jayapura" title="PPID Kota Jayapura">
+              </a>
+            </div>
+            <!-- item end -->
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-lpse.png" class="img-fluid"
+                  alt="LPSE Kota Jayapura" title="LPSE Kota Jayapura">
+              </a>
+            </div>
+            <!-- item end -->
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-papua.png" class="img-fluid"
+                  alt="Provinsi Papua" title="Provinsi Papua">
+              </a>
+            </div>
+            <!-- item end -->
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./public/images/eksternal-link/eksternal-link-bps-kota-jayapura.png" class="img-fluid"
+                  alt="Badan Pusat Statistik Kota Jayapura" title="Badan Pusat Statistik Kota Jayapura">
+              </a>
+            </div>
+            <!-- item end -->
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- /Clients Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                  Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-                  malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-activity"></i>
-              </div>
-              <div>
-                <h3>Nesciunt Mete</h3>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
-                  perferendis tempore et consequatur.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-diagram-3"></i>
-              </div>
-              <div>
-                <h3>Eosle Commodi</h3>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                  nesciunt dolorem.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-easel"></i>
-              </div>
-              <div>
-                <h3>Ledo Markt</h3>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                  eos earum corrupti.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-card d-flex">
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-clipboard-data"></i>
-              </div>
-              <div>
-                <h3>Asperiores Commodit</h3>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                  adipisci neque.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Service Card -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 justify-content-center">
-
-          <!-- Basic Plan -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-card">
-              <h3>Basic Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">9.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium totam.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Duis aute irure dolor
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Excepteur sint occaecat
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Nemo enim ipsam voluptatem
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-primary">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Standard Plan -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-card popular">
-              <div class="popular-badge">Most Popular</div>
-              <h3>Standard Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">19.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Consectetur adipiscing elit
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Sed do eiusmod tempor
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Ut labore et dolore magna
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-light">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Premium Plan -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-card">
-              <h3>Premium Plan</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">39.9</span>
-                <span class="period">/ month</span>
-              </div>
-              <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae.</p>
-
-              <h4>Featured Included:</h4>
-              <ul class="features-list">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Temporibus autem quibusdam
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Saepe eveniet ut et voluptates
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Nam libero tempore soluta
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Cumque nihil impedit quo
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Maxime placeat facere possimus
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-primary">
-                Buy Now
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section class="faq-9 faq section light-background" id="faq">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5" data-aos="fade-up">
-            <h2 class="faq-title">Have a question? Check out the FAQ</h2>
-            <p class="faq-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet
-              adipiscing sem neque sed ipsum.</p>
-            <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
-              <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
-                  fill="currentColor"></path>
-              </svg>
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
-                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
-                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
-                    sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
-                    id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
-                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
-                    Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi.
-                    Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- /Faq Section -->
-
-    <!-- Call To Action 2 Section -->
-    <section id="call-to-action-2" class="call-to-action-2 section dark-background">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action 2 Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
-              </p>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
-              </p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-
-                </div>
-              </form>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+    </section><!-- /Patners Section -->
 
   </main>
 
@@ -1555,14 +1675,14 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">iLanding</span>
+          <a href="./" class="logo d-flex align-items-center">
+            <img src="./public/images/profil/logo-kota-jayapura.png" alt="Logo Kota Jayapura">
+            <span class="sitename">Kota Jayapura</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Jl. Balai Kota No. 1, Kelurahan Entrop, Distrik Jayapura Selatan, Kota Jayapura, Papua </p>
+            <p><strong>Cal:</strong> <span>(0967) xxxxxxx</span></p>
+            <p><strong>Email:</strong> <span>info@jayapurakota.go.id</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -1572,47 +1692,32 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+
+
+        <div class="col-lg-4 col-md-3 footer-links">
+          <h4 class="fw-bold text-uppercase">OPD (Organisasi Perangkat Daerah)</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Badan Pengelola Keuangan dan Aset Daerah</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Dinas Kesehatan</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Dinas Sosial</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Dinas Kebudayaan dan Pariwisata</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Badan Perencanaan Pembangunan Daerah (Bappeda)</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Badan Kepegawaian, Pendidikan dan Pelatihan (BKPP)</a>
+            </li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-lg-4 col-md-3 footer-links">
+          <h4></h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Badan Pengelola Keuangan dan Aset Daerah (BPKAD)</a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Sekretariat Daerah (Setda)</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Biro Hukum</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Biro Tata Pemerintahan, Otonomi Khusus dan
+                Kesejahteraan Rakyat</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Biro Pengadaan Barang dan Jasa</a></li>
+            <li><a href="#"><i class="fa-solid fa-building"></i> Biro Organisasi</a></li>
           </ul>
         </div>
 
@@ -1620,13 +1725,10 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">iLanding</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Pemerintah Kota Jayapura</strong> <span>- All Rights
+          Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Dikembangkan oleh <a href="https://nokensoft.com/">Nokensoft.com</a>
       </div>
     </div>
 
